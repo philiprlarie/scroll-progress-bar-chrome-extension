@@ -1,5 +1,4 @@
 var scrollProgressBar = document.createElement('div');
-// scrollProgressBar.innerHTML = '<div></div>';
 scrollProgressBar.setAttribute('id', 'scroll-progress-bar-chrome-extension');
 document.body.appendChild(scrollProgressBar);
 
