@@ -7,7 +7,8 @@ window.addEventListener('scroll', function () {
   if (document.body.offsetHeight <= window.innerHeight) {
     percentScrolled = 0;
   } else {
-    percentScrolled = document.body.scrollTop / (document.body.offsetHeight - window.innerHeight) * 100;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    percentScrolled = scrollTop / (document.body.offsetHeight - window.innerHeight) * 100;
   }
   scrollProgressBar.style.width = percentScrolled + '%';
 });
